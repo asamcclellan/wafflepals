@@ -100,12 +100,12 @@ textarea {
    ========================================================================== */
   @font-face {
     font-family: Arista;
-    src: url('fonts/z-arista.regular.ttf') format('truetype');
+    src: url('z-arista.regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: Futura;
-    src: url('fonts/futura-medium.otf') format('opentype');
+    src: url('futura-medium.otf') format('opentype');
   }
 
   .App {
