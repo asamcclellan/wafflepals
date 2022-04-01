@@ -1,0 +1,639 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.4;
+  min-width: 15em;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  @font-face {
+    font-family: Arista;
+    src: url('fonts/z-arista.regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: Futura;
+    src: url('fonts/futura-medium.otf') format('opentype');
+  }
+
+  .App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    font-size: 1em;
+    font-family: 'Futura';
+    color: #00514b;
+  }
+  
+  .App h2 {
+    font-family: 'Arista';
+    color: #00b5ac;
+    font-size: 2.5em;
+  }
+  
+  .App h3 {
+    font-size: 2em;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-waffle {
+      animation: App-waffle-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-waffle-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    padding: 2em;
+  }
+  
+  .App-header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .App-waffle {
+    margin-bottom: 1em;
+    width: 30%;
+  }
+  
+  .App-banner {
+    padding-bottom: 1em;
+  }
+  
+  .App-header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App-header-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 0;
+    margin: 0;
+  }
+  
+  .App-header-icons li {
+    padding: 0 1em;
+  }
+  
+  .App-header-navlinks {
+    list-style-type: none;
+    padding: 1em 0;
+    margin: 0;
+  }
+  
+  .App-header-navlinks li{
+    padding: .25em 0;
+  }
+  
+  .App-header-navlinks a{
+    text-decoration: none;
+    color: #5b3a00;
+  }
+  
+  /* Main Section Styles*/
+  
+  .App-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .App-intro {
+    background-color: #ccffff;
+    padding: 2em;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .App-intro h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .App-intro img {
+    width: 100%;
+  }
+  
+  .App-about {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .App-about h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .App-about p {
+    text-align: center;
+    width: 70%;
+  }
+  
+  .App-roadmap {
+    padding: 3em 0;
+  }
+  
+  .App-roadmap h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .App-roadmap img {
+    margin-top: 1em;
+    width: 70%;
+  }
+  
+  .App-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+  }
+  
+  .App-team h2 {
+    width: 100%;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .App-team article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+  }
+  
+  .App-team article h3 {
+    color: #00b5ac;
+    margin-top: .25em;
+    margin-bottom: .5em;
+  }
+  
+  .App-team article h4 {
+    margin: 0;
+    margin-bottom: .5em;
+  }
+  
+  .App-team article a {
+    width: 80%;
+  }
+  
+  .App-team img {
+    width: 100%;
+  }
+  
+  .App-roadmap {
+    background-color: #ccffff;
+  }
+  
+  .App-roadmap img {
+    max-width: 100%;
+  }
+  
+  .App-faqs {
+    background-color: #ccffff;
+    padding: 3em 0;
+  }
+  
+  .App-faqs h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .App-faqs .faq {
+    padding: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .App-faqs h3 {
+    text-align: left;
+    width: 90%;
+    margin-bottom: .125em;
+  }
+  
+  .App-faqs p {
+    text-align: left;
+    width: 90%;
+  }
+  
+  .App-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+  }
+  
+  .App-footer img {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 2em;
+  }
+  
+  /* Tablet styles */
+  @media only screen and (min-width: 48em){
+    .App {
+      font-size: 1.2em;
+    }
+  
+    .App-banner {
+      padding-bottom: 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .App-header-navlinks {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    .App-header-navlinks li{
+      margin: 0 1em;
+    }
+  
+    .App-header-icons {
+      padding: 0;
+    }
+  
+    .App-intro {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .App-intro img {
+      max-width: 700px;
+    }
+  
+    .App-intro article {
+      padding: 0 2em;
+    }
+  
+    .App-team {
+      flex-flow: row wrap;
+    }
+  
+    .App-team article {
+      width: 40%;
+      margin-bottom: 4em;
+    }
+  
+    .App-team article a {
+      max-width: 80%;
+    }
+  
+    .App-team article h3 {
+      width: 70%;
+    }
+  }
+  
+  /* Desktop styles */
+  @media only screen and (min-width: 75em){
+    .App {
+      font-size: 1.35em;
+    }
+  
+    .App-header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 .5em;
+    }
+  
+    .App-header div {
+      flex-direction: row;
+    }
+  
+    .App-waffle {
+      margin-bottom: 0;
+      margin-right: 1em;
+    }
+  
+    .App-header nav {
+      flex-flow: row nowrap;
+    }
+  
+    .App-header-icons li {
+      margin: .5em;
+      padding: 0;
+    }
+  
+    .App-intro img {
+      max-width: 1000px;
+    }
+  
+    .App-team img {
+      max-width: 400px;
+    }
+  
+    .App-roadmap img {
+      max-width: 1000px;
+    }
+  
+    .App-team {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .App-team article {
+      width: 20%;
+    }
+  
+    .App-team article h3 {
+      width: 100%;
+      font-size: 1.25em;
+  
+    }
+  }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="634.969" viewBox="0 0 1280 634.969">
+    <defs>
+        <linearGradient id="al5bg1capa" x1=".5" y1="-.131" x2=".5" y2=".847" gradientUnits="objectBoundingBox">
+            <stop offset=".002" stop-color="#00a99d"/>
+            <stop offset="1" stop-color="#a9ffff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="Group 4">
+        <path data-name="Rectangle 2" transform="rotate(180 640 317.485)" style="fill:url(#al5bg1capa)" d="M0 0h1280v634.969H0z"/>
+    </g>
+</svg>
